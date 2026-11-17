@@ -1,0 +1,612 @@
+/* Swasthya's shared palette and responsive page treatments. */
+@media (max-width: 700px) {
+  .course-toolbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .course-toolbar input {
+    max-width: 100%;
+  }
+}
+:root {
+  --green:#31594c;
+  --ink:#263d34;
+  --muted:#68756c;
+  --paper:#fafbf7;
+  --line:#dfe5dc;
+  color:var(--ink);
+  background:var(--paper)
+}
+
+body {
+  background:var(--paper)
+}
+
+.header {
+  height:88px;
+  background:rgba(250,251,247,.98);
+  border-color:var(--line)
+}
+
+.brand {
+  color:var(--green);
+  font-size:29px;
+  font-family:'Playfair Display',Georgia,serif;
+  font-weight:500
+}
+.brand small {
+  font-size:8px;
+  letter-spacing:2px;
+  color:#697b68
+}
+.brand-mark {
+  color:#ac853d;
+  border-color:#c8b581;
+  width:43px;
+  height:43px;
+  font-size:27px
+}
+
+.nav-links {
+  gap:21px;
+  color:#5d6b62
+}
+.nav-links>a.active,.nav-login {
+  color:var(--green)
+}
+
+.btn {
+  background:var(--green);
+  border-color:var(--green);
+  border-radius:5px;
+  padding:15px 23px;
+  font-weight:500
+}
+.btn:hover {
+  background:#234235;
+  border-color:#234235
+}
+.btn-outline {
+  background:transparent;
+  color:var(--green)
+}
+.btn-outline:hover {
+  color:white
+}
+.text-link {
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  color:var(--green);
+  font-size:13px;
+  font-weight:600;
+  border-bottom:1px solid #aebcae;
+  padding:7px 0
+}
+
+.eyebrow {
+  color:#64795d;
+  letter-spacing:2px;
+  font-size:10px
+}
+.section {
+  padding:88px 0
+}
+.soft,.page-hero {
+  background:#eef2e9
+}
+.page-hero h1 {
+  color:var(--ink);
+  font-size:clamp(36px,4vw,54px)
+}
+.page-hero p {
+  color:var(--muted)
+}
+
+.welcome-section {
+  padding:65px 0 76px
+}
+.welcome-grid {
+  display:grid;
+  grid-template-columns:1.08fr 1fr;
+  gap:70px;
+  align-items:center
+}
+.welcome-copy h1 {
+  font:clamp(44px,4.8vw,64px)/1.13 'Playfair Display',Georgia,serif;
+  letter-spacing:-1.7px;
+  margin:8px 0 25px;
+  color:var(--ink)
+}
+.welcome-copy h1 em {
+  font-weight:400;
+  color:#688161
+}
+.welcome-copy>p {
+  max-width:440px;
+  font-size:15px;
+  line-height:1.9;
+  color:var(--muted)
+}
+.welcome-actions {
+  display:flex;
+  align-items:center;
+  gap:24px;
+  margin-top:30px
+}
+.welcome-location {
+  display:flex;
+  align-items:center;
+  gap:7px;
+  color:#6d796d;
+  font-size:11px;
+  margin-top:40px
+}
+.welcome-location span {
+  border-left:1px solid #c8d0c2;
+  margin-left:8px;
+  padding-left:14px
+}
+.welcome-visual {
+  position:relative;
+  padding-bottom:30px
+}
+.welcome-visual>img {
+  width:100%;
+  height:490px;
+  object-fit:cover;
+  border-radius:180px 180px 8px 8px;
+  filter:saturate(.65)
+}
+.practice-note {
+  position:absolute;
+  bottom:0;
+  left:-27px;
+  right:26px;
+  background:#fff;
+  padding:22px;
+  display:flex;
+  align-items:center;
+  gap:17px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  box-shadow:0 12px 35px #263d3408
+}
+.practice-note strong {
+  font:18px Georgia,serif
+}
+.practice-note p {
+  font-size:11px;
+  color:var(--muted);
+  margin:7px 0 0
+}
+.practice-symbol {
+  color:#9b7b3b;
+  font:32px Georgia
+}
+.photo-credit {
+  position:absolute;
+  right:12px;
+  bottom:94px;
+  color:white;
+  font-size:8px;
+  text-shadow:0 1px 3px #222
+}
+
+.principles-strip {
+  background:#edf1e8;
+  border-block:1px solid var(--line);
+  padding:25px 0
+}
+.principles-strip .container {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  color:#64745f;
+  font-size:12px
+}
+.principles-strip span+span {
+  border-left:1px solid #ccd7c5;
+  padding-left:35px
+}
+
+.section-head h2,.institute-copy h2,.training-panel h2 {
+  font:43px/1.2 'Playfair Display',Georgia,serif;
+  color:var(--ink);
+  margin:0
+}
+.section-head h2 em,.institute-copy h2 em,.training-panel h2 em {
+  font-weight:400;
+  color:#738667
+}
+.section-intro {
+  max-width:330px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.9;
+  margin:0
+}
+.pathway-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+  margin-top:40px
+}
+.pathway-card {
+  border:1px solid var(--line);
+  padding:32px;
+  background:#fff;
+  border-radius:6px;
+  transition:background .2s
+}
+.pathway-card:hover {
+  background:#f0f4ec
+}
+.pathway-card>svg {
+  color:#768d67
+}
+.pathway-card h3 {
+  font:24px/1.35 'Playfair Display',Georgia,serif;
+  margin:24px 0 12px
+}
+.pathway-card p {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.9
+}
+.pathway-card>span {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:12px;
+  color:var(--green);
+  margin-top:25px
+}
+
+.institute-section {
+  background:#f0f3ec
+}
+.institute-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+  align-items:center
+}
+.institute-art {
+  position:relative
+}
+.institute-art img {
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  filter:saturate(.6);
+  border-radius:6px
+}
+.institute-art>span {
+  display:block;
+  font-size:9px;
+  letter-spacing:2px;
+  color:#72816d;
+  margin-top:17px
+}
+.institute-copy>p,.training-panel>div>p {
+  font-size:14px;
+  line-height:1.9;
+  color:var(--muted)
+}
+.approach-list {
+  list-style:none;
+  padding:0;
+  margin:25px 0;
+  display:grid;
+  gap:13px;
+  font-size:13px
+}
+.approach-list li {
+  display:flex;
+  align-items:center;
+  gap:12px
+}
+.approach-list svg {
+  color:#788e65
+}
+
+.training-panel {
+  background:#eef2e8;
+  padding:55px 65px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:80px;
+  border-radius:8px
+}
+.training-panel>div>p {
+  max-width:450px
+}
+.training-panel .btn {
+  margin-top:12px
+}
+.training-details {
+  padding:35px;
+  background:#fafbf7;
+  border:1px solid #d4decc;
+  border-radius:6px;
+  color:var(--green)
+}
+.training-details h3 {
+  font:32px/1.25 'Playfair Display',Georgia,serif;
+  margin:20px 0
+}
+.training-details p {
+  font-size:12px!important
+}
+.training-details>span {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:11px
+}
+.training-divider {
+  border-top:1px solid var(--line);
+  margin:20px 0
+}
+
+.journal-preview {
+  padding-top:0
+}
+.journal-links {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px
+}
+.journal-links>a {
+  position:relative;
+  border-block:1px solid var(--line);
+  padding:28px 40px 28px 0
+}
+.journal-links span {
+  font-size:9px;
+  color:#78836e;
+  letter-spacing:1.3px
+}
+.journal-links h3 {
+  font:25px/1.4 'Playfair Display',Georgia,serif;
+  margin:14px 0 0
+}
+.journal-links svg {
+  position:absolute;
+  right:0;
+  top:55px;
+  color:var(--green)
+}
+.closing-section {
+  text-align:center;
+  padding:70px 0;
+  background:#e7edde
+}
+.closing-section h2 {
+  font:40px/1.3 'Playfair Display',Georgia,serif;
+  margin:0 0 28px
+}
+.closing-section p {
+  font-size:11px;
+  color:var(--muted);
+  margin-top:22px
+}
+
+.footer {
+  background:#263e34
+}
+.brand-light {
+  color:#f3f5ec
+}
+.brand-light small {
+  color:#bac8b4
+}
+.footer h4 {
+  color:#edf1e5
+}
+.footer p,.footer a {
+  color:#bcc9bc
+}
+.footer .brand {
+  font-size:28px
+}
+.copyright {
+  border-color:#4b6051;
+  color:#adbcaa
+}
+.course-card,.info-card,.contact-card,.dash-card,.detail-panel,.form-card,.auth-card,.blog-card {
+  border-color:var(--line);
+  border-radius:6px
+}
+.course-card:hover {
+  transform:none;
+  box-shadow:0 8px 25px #263e340a
+}
+.course-image img {
+  filter:saturate(.7)
+}
+.course-image>span {
+  background:#edf2e7;
+  color:var(--green)
+}
+.course-body h3,.blog-card h2,.info-card h3,.contact-card h3,.dash-card h3,.subhead,.detail-panel h2,.about-grid h2 {
+  color:var(--ink)
+}
+.course-bottom strong,.course-bottom a,.blog-card-footer a,.blog-back,.auth-card a,.empty-state a,.feature-item>svg,.info-icon,.contact-card>svg,.dash-card>svg {
+  color:var(--green)
+}
+.notice,.empty-state {
+  background:#f0f3e9;
+  color:#5f7158
+}
+.notice {
+  border-color:#94a67b
+}
+.blog-card-heading,.eyebrow {
+  color:#6b7e60
+}
+.form-card input,.form-card select,.form-card textarea,.auth-card input,.blog-toolbar input,.blog-toolbar select,.course-toolbar input {
+  border-color:#d5dece;
+  background:#fafbf7;
+  outline-color:var(--green)
+}
+.course-enquiry-banner {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
+  background:#eaf0e2;
+  border:1px solid #d5dfca;
+  border-radius:7px;
+  padding:32px;
+  margin-bottom:45px
+}
+.course-enquiry-banner h2 {
+  font:30px 'Playfair Display',Georgia,serif;
+  margin:0
+}
+.course-enquiry-banner p {
+  font-size:13px;
+  color:var(--muted)
+}
+
+a:focus-visible,button:focus-visible {
+  outline:2px solid #728960;
+  outline-offset:5px
+}
+.mobile-toggle {
+  color:var(--green)
+}
+
+@media(max-width:1050px) {
+  .nav-links {
+  gap:13px
+}
+.welcome-grid {
+  gap:35px
+}
+.welcome-actions {
+  gap:15px;
+  flex-wrap:wrap
+}
+.institute-grid {
+  gap:40px
+}
+.training-panel {
+  gap:35px;
+  padding:40px
+}
+.principles-strip span+span {
+  padding-left:18px
+}
+
+}
+
+@media(max-width:700px) {
+  .header {
+  height:74px
+}
+.nav-links {
+  top:74px;
+  background:var(--paper)
+}
+.welcome-section {
+  padding:40px 0 50px
+}
+.welcome-grid,.institute-grid,.training-panel {
+  grid-template-columns:1fr;
+  gap:35px
+}
+.welcome-copy h1 {
+  font-size:39px;
+  letter-spacing:-1px
+}
+.welcome-copy>p {
+  font-size:14px
+}
+.welcome-visual {
+  margin:5px 8px 0 15px
+}
+.welcome-visual>img {
+  height:370px;
+  border-radius:140px 140px 6px 6px
+}
+.practice-note {
+  left:-15px;
+  right:15px;
+  padding:18px
+}
+.welcome-location {
+  margin-top:27px
+}
+.principles-strip .container {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  font-size:10px
+}
+.principles-strip span+span {
+  border:0;
+  padding:0
+}
+.section {
+  padding:60px 0
+}
+.pathway-grid {
+  grid-template-columns:1fr;
+  gap:15px;
+  margin-top:25px
+}
+.pathway-card {
+  padding:25px
+}
+.section-head h2,.institute-copy h2,.training-panel h2 {
+  font-size:35px
+}
+.section-head {
+  gap:20px
+}
+.institute-art img {
+  height:330px
+}
+.training-panel {
+  padding:28px;
+  width:calc(100% - 34px)
+}
+.training-details {
+  padding:25px
+}
+.journal-preview {
+  padding-top:0
+}
+.journal-links {
+  grid-template-columns:1fr;
+  gap:20px
+}
+.closing-section h2 {
+  font-size:31px
+}
+.course-enquiry-banner {
+  align-items:start;
+  flex-direction:column;
+  padding:25px
+}
+.course-enquiry-banner h2 {
+  font-size:26px
+}
+.copyright {
+  font-size:10px
+}
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+  transition:none!important;
+  scroll-behavior:auto!important
+}
+
+}
+
