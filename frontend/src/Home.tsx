@@ -1,3 +1,5 @@
+import LivingForm from './LivingForm';
+import CursorLight from './CursorLight';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, HeartPulse, MapPin, MoveUpRight, Check } from 'lucide-react';
 import { media } from './api';
@@ -6,21 +8,17 @@ export const courseEnquiry = 'https://alvo.chat/8djp';
 export const consultationEnquiry = 'https://wa.me/919355441199';
 
 export default function Home() {
-  return <main className="swasthya-home">
+  return <main className="swasthya-home"><CursorLight />
     <section className="welcome-section">
       <div className="container welcome-grid">
         <div className="welcome-copy">
-          <span className="eyebrow">SWASTHYA MEDICAL YOGA INSTITUTE</span>
-          <h1>A little more ease.<br />A better way<br />to <em>move through life.</em></h1>
+          <span className="eyebrow">SWASTHYA / MEDICAL YOGA</span>
+          <h1>Reconnect.<br /><em>With yourself.</em></h1>
           <p>Thoughtful medical yoga for spine and joint care. Discover a guided approach to movement, rehabilitation, and everyday wellbeing.</p>
-          <div className="welcome-actions"><Link className="btn" to="/booking">Find your practice <ArrowRight size={17} /></Link><Link className="text-link" to="/courses">Explore our courses <MoveUpRight size={16} /></Link></div>
+          <div className="welcome-actions"><Link className="btn" to="/booking">Begin your journey <ArrowRight size={17} /></Link><Link className="text-link" to="/courses">Explore our courses <MoveUpRight size={16} /></Link></div>
           <div className="welcome-location"><MapPin size={15} /> Pune & Navi Mumbai <span>In person & online</span></div>
         </div>
-        <div className="welcome-visual">
-          <img src={media.meditate} alt="A quiet moment of seated yoga practice" fetchPriority="high" />
-          <span className="photo-credit">Practice inspiration · stock photography</span>
-          <div className="practice-note"><span className="practice-symbol">ॐ</span><div><strong>Care begins with understanding.</strong><p>Movement. Awareness. A practice for you.</p></div></div>
-        </div>
+        <LivingForm />
       </div>
     </section>
 
@@ -40,7 +38,7 @@ export default function Home() {
       <div className="institute-copy"><span className="eyebrow">THE SWASTHYA APPROACH</span><h2>Traditional wisdom.<br /><em>Thoughtful practice.</em></h2><p>At Swasthya, yoga brings together health, education, and lifestyle. Our focus is on understanding movement and supporting a practice suited to the individual.</p><p>Explore medical yoga education with Dr. Pradnyesh Naikwade and discover the institute’s work in spine and joint care.</p><ul className="approach-list"><li><Check size={17} /> An understanding of the body</li><li><Check size={17} /> Guided movement and practice</li><li><Check size={17} /> Learning that connects to daily life</li></ul><Link className="text-link" to="/about">Get to know Swasthya <ArrowRight size={16} /></Link></div>
     </div></section>
 
-    <section className="section"><div className="container training-panel">
+    <section className="section education-section"><div className="container training-panel">
       <div><span className="eyebrow">MEDICAL YOGA EDUCATION</span><h2>Turn curiosity into<br /><em>deeper understanding.</em></h2><p>Interested in the Medical Yoga Therapy Course? Speak with the team about the curriculum, eligibility, format, and upcoming batch.</p><a className="btn" href={courseEnquiry} target="_blank" rel="noopener noreferrer">Enquire about the course <MoveUpRight size={16} /></a></div>
       <div className="training-details"><BookOpen size={34} strokeWidth={1.2} /><h3>Medical Yoga<br />Therapy Course</h3><p>December–January 2026–27</p><div className="training-divider" /><p>Course details and registration<br />through the Swasthya team</p><span>Enquiry via WhatsApp <ArrowRight size={16} /></span></div>
     </div></section>

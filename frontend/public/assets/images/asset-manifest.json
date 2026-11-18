@@ -1,0 +1,19 @@
+{
+  "generator": "Built-in imagegen",
+  "usage": "Illustrative scenes, not photographs of institute staff, patients, or premises.",
+  "assets": [
+    {
+      "file": "guided-therapeutic-yoga.webp",
+      "prompt": "Create a professional healthcare editorial photograph for a medical yoga institute website. Landscape 1536x1024 composition. An Indian female therapeutic yoga instructor in her late 30s wearing muted sage green cotton clothing attentively guiding an Indian female adult participant around 50 doing a gentle seated shoulder mobility exercise on a simple wooden chair, both fully clothed, realistic comfortable posture, grounded feet, anatomically correct hands and arms. The instructor is beside her, observing and explaining without manipulating the patient's body. Spacious premium Indian rehabilitation yoga studio with warm ivory walls, beige floor, soft natural window light, a neatly rolled yoga mat and a small plant. Candid human connection, calm and professional rather than spiritual. Photorealistic natural skin texture. No text, no logos, no religious objects, no clinical outcome claims. Wide composition, subjects clearly visible and usable for website image."
+    },
+    {
+      "file": "medical-yoga-studio.webp",
+      "prompt": "Photorealistic professional healthcare editorial photography for an Indian therapeutic yoga institute. Wide landscape 1536x1024. A light-filled warm ivory yoga studio, beige wood floor, sage mats, two simple chairs and wooden yoga blocks neatly arranged, a small bookshelf and a potted green plant. No people. A large window to a leafy courtyard with natural morning light. Peaceful, understated, professional rehabilitation studio, accessible clear walking space, no religious symbols, no text or logos, no luxurious spa decor. Realistic architectural photograph with warm natural textures, eye-level view."
+    },
+    {
+      "file": "guided-mobility-practice.webp",
+      "prompt": "Photorealistic professional healthcare editorial photo, wide landscape 1536x1024. Indian therapeutic yoga instructor wearing sage cotton shirt and trousers observing an older Indian male adult in a cream t-shirt doing a gentle standing balance exercise while holding the back of a stable wooden chair with both feet safely close to floor, no extreme poses. Both full body visible with anatomically natural arms, hands, feet and legs. Spacious premium Indian medical yoga studio, ivory walls, beige floor, a sage mat, warm natural daylight. Calm professional personal guidance, realistic skin textures, no logos, no text, no religious elements, no medical outcome claims."
+    }
+  ],
+  "optimization": "1440px WebP with 720px responsive variants; quality 86 and 83; below-fold images lazy-loaded."
+}
